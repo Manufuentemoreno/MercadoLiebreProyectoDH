@@ -1,7 +1,37 @@
 * {
     font-family: "Roboto";
+    background-color: #EAC926;
+}
+
+p{
+    font-size: 12px;
+}
+
+p .precios{
+    font-size: 18px;
+}
+
+p .descuentos{
+    font-size: 16px;
+}
+
+h3 .descripciones{
+    font-size: 16px;
+}
+
+#titulares{
+    font-size: 24px;
 }
 
 #logo{
     text-align: center;
 }
+
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+*/
