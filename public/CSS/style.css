@@ -1,6 +1,18 @@
 * {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+.bg-yellow{
     background-color: #EAC926;
+}
+
+header{
+    width: 100%;
+}
+
+#logo{
+    width: 100%;
 }
 
 .burger-menu {
@@ -15,10 +27,6 @@ p{
     font-size: 12px;
 }
 
-#ancho {
-    width: 100%;
-}
-
 p .precios{
     font-size: 18px;
 }
@@ -31,7 +39,7 @@ h3 .descripciones{
     font-size: 16px;
 }
 
-#titulares{
+.header {
     font-size: 24px;
 }
 
