@@ -62,12 +62,22 @@ button{
     height: 2em;
     border-radius: 5px;
     border: solid 1px black;
+    touch-action: pinch-zoom;
+}
+
+button:active{
+    background-color: #d1d1d1;
+    transform: translateY(0.5px);
 }
 
 .fa-magnifying-glass{
     margin-left: 2px;
     margin-right: 3px;
     font-size: 1em;
+}
+
+.slogan{
+    margin-top: 3px;
 }
 
 .font-blue{
@@ -117,13 +127,13 @@ button{
 }
 
 .nav-section {
-    margin: 0;
+    margin-bottom: 1em;
     padding: 0;
   }
   
 .nav-section li a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     margin-right: 3px;
   }
   
@@ -158,14 +168,11 @@ button{
 }
 
 .fa-truck{
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-right: auto;
-    padding-left: auto;
+    padding-top: 0.40em;
     border: 1px solid #39b54a;
-    height:25px;
-    width: 25px;
-    border-radius: 25px;
+    height:2em;
+    width: 2em;
+    border-radius: 50px;
     text-align: center;
 }
 
