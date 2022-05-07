@@ -1,57 +1,182 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
+h1{
+    margin: 0;
+}
+
+.font-heading {
+    font-size: 24px;
+}
+
+.font-big {
+    font-size: 18px;
+}
+
+.font-medium{
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main article{
+    margin-bottom: 10px;
+}
+
+nav {
+    padding-left: 2%;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.busqueda{
+    border-radius: 5px;
+    height: 2em;
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    border: solid 1px black;
+}
+
+button{
+    margin: 0;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.fa-magnifying-glass{
+    margin-left: 2px;
+    margin-right: 3px;
+    font-size: 1em;
+}
+
+.font-blue{
+    color:#03264C;
+}
+.bg-blue{
+    background-color: #03264C;
+}
+
+.font-light-blue{
+    color:#1259c3;
+}
+.bg-light-blue{
+    background-color: #1259c3;
+}
+
+.font-yellow{
+    color:#EAC926;
+}
 .bg-yellow{
     background-color: #EAC926;
 }
 
-header{
-    width: 100%;
+.font-grey{
+    color:#666;
+}
+.bg-grey{
+    background-color: #666;
 }
 
-#logo{
-    width: 100%;
+.font-light-grey{
+    color:#ebebeb;
+}
+.bg-light-grey{
+    background-color: #ebebeb;
 }
 
-.burger-menu {
-    background-color: #03264C;
-    width: auto;
-    height: auto;
-    border-radius: 10%;
-    padding: 5px;
+.font-green{
+    color:#39b54a;
+}
+.bg-green{
+    background-color: #39b54a;
 }
 
-p{
-    font-size: 12px;
-}
+.nav-section {
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-section li a {
+    color: black;
+    text-decoration: none;
+    margin-right: 3px;
+  }
+  
+.nav-section li {
+    list-style: none;
+  }
 
-p .precios{
-    font-size: 18px;
-}
-
-p .descuentos{
-    font-size: 16px;
-}
-
-h3 .descripciones{
-    font-size: 16px;
-}
-
-.header {
-    font-size: 24px;
-}
-
-#logo{
+.burger-menu{
     text-align: center;
 }
 
-/* 
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a; 
-*/
+.burger-menu i{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #1259c3;;
+    color: #ebebeb;
+}
+
+.article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: #ebebeb;
+}
+
+.envio{
+    border: 1px solid #39b54a;
+    height:50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+footer{
+    background-color: white;
+    width:95%;
+    margin: auto;
+    padding: 5%;
+}
+
+footer article{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5px;
+    line-height: 15px;
+    word-spacing: 0.5%;
+    padding-bottom: 7%;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+footer h3{
+    margin: 0px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+footer p{
+    margin-top: 1px;
+}
+
