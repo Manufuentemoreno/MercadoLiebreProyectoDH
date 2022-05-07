@@ -25,11 +25,13 @@ h1{
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    background-color: #ebebeb;
 }
 
 main{
     width: 90%;
     margin: auto;
+    background-color: #ebebeb;
 }
 
 main article{
@@ -52,6 +54,7 @@ section{
     margin-right: 0;
     margin-top: 10px;
     border: solid 1px black;
+    max-width: 198px;
 }
 
 button{
@@ -109,6 +112,10 @@ button{
     background-color: #39b54a;
 }
 
+.nav-bar{
+    display: none;
+}
+
 .nav-section {
     margin: 0;
     padding: 0;
@@ -126,6 +133,7 @@ button{
 
 .burger-menu{
     text-align: center;
+    padding-bottom: 3%;
 }
 
 .burger-menu i{
@@ -138,19 +146,32 @@ button{
 .article{
     border-top: solid 1px #ebebeb;
     padding: 15px;
-    background-color: #ebebeb;
+    background-color: white;
 }
 
-.envio{
+.article p{
+    line-height: 10%;
+}
+
+.descripcion{
+    display: none;
+}
+
+.fa-truck{
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-right: auto;
+    padding-left: auto;
     border: 1px solid #39b54a;
-    height:50px;
-    width: 50px;
+    height:25px;
+    width: 25px;
     border-radius: 25px;
+    text-align: center;
 }
 
 footer{
     background-color: white;
-    width:95%;
+    width:100%;
     margin: auto;
     padding: 5%;
 }
@@ -179,4 +200,3 @@ footer h3{
 footer p{
     margin-top: 1px;
 }
-
