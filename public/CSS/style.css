@@ -80,6 +80,8 @@ button:active{
     margin-top: 3px;
 }
 
+/* ------------------ TYPO & BACKGROUND COLOR ------------------ */ 
+
 .font-blue{
     color:#03264C;
 }
@@ -120,6 +122,14 @@ button:active{
 }
 .bg-green{
     background-color: #39b54a;
+}
+
+/* ------------------ SECCIONES ------------------ */ 
+
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-bar{
