@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-h1{
-    margin: 0;
-}
-
-.font-heading {
-    font-size: 24px;
-}
-
-.font-big {
-    font-size: 18px;
-}
-
-.font-medium{
-    font-size: 16px;
-}
-
 .center {
     text-align: center;
 }
@@ -46,41 +30,20 @@ section{
     margin-top: 20px;
 }
 
-.busqueda{
-    border-radius: 5px;
-    height: 2em;
-    width: 60%;
-    margin-left: 10px;
-    margin-right: 0;
-    margin-top: 10px;
-    border: solid 1px black;
-    max-width: 198px;
-}
-
-button{
-    margin: 0;
-    height: 2em;
-    border-radius: 5px;
-    border: solid 1px black;
-    touch-action: pinch-zoom;
-}
-
-button:active{
-    background-color: #d1d1d1;
-    transform: translateY(0.5px);
-}
-
-.fa-magnifying-glass{
-    margin-left: 2px;
-    margin-right: 3px;
-    font-size: 1em;
-}
-
-.slogan{
-    margin-top: 3px;
-}
 
 /* ------------------ TYPO & BACKGROUND COLOR ------------------ */ 
+
+.font-heading {
+    font-size: 24px;
+}
+
+.font-big {
+    font-size: 18px;
+}
+
+.font-medium{
+    font-size: 16px;
+}
 
 .font-blue{
     color:#03264C;
@@ -130,7 +93,61 @@ button:active{
 .main-header{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content:space-between;
+    margin: auto;
+    padding: 5%;
 }
+
+.main-header-top-bar{
+    width: 100%;
+    margin: auto;
+}
+
+.main-header-bottom-bar ul{
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+}
+
+
+
+.logo{
+    margin-bottom: 5%;
+}
+
+.search-bar{
+    display: flex;
+    height: 2.5em;
+    width: auto;
+    justify-content:center;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    align-items: center;
+}
+
+.search-bar input{
+    flex-grow:0.8;
+    display: block;
+    border: solid white 1px;
+    background-color: none;
+}
+
+.button-search{
+    display: block;
+    border: solid white 1px;
+    border-left: solid rgba(0, 0, 0, 0.16) 1px;
+    background-color: white;
+}
+
+.fa-magnifying-glass{
+    display: block;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+/* ------- NAV ---------*/
 
 .nav-bar{
     display: none;
@@ -151,9 +168,14 @@ button:active{
     list-style: none;
   }
 
+/* ------- BURGUER ---------*/
+
 .burger-menu{
+    display: block;
+    width: 100%;
+    margin: auto;
+    align-self: baseline;
     text-align: center;
-    padding-bottom: 3%;
 }
 
 .burger-menu i{
@@ -162,6 +184,8 @@ button:active{
     background-color: #1259c3;;
     color: #ebebeb;
 }
+
+/* ------- ARTICULOS ---------*/
 
 .article{
     border-top: solid 1px #ebebeb;
@@ -185,6 +209,8 @@ button:active{
     border-radius: 50px;
     text-align: center;
 }
+
+/* ------ FOOTER ---------- */
 
 footer{
     background-color: white;

@@ -15,6 +15,10 @@
     .burger-menu{
         display: none;
     }
+
+    .main-header-top-bar{
+        justify-content: space-around;
+    }
     
 }
 
