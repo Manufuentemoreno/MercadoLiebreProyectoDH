@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 .center {
@@ -91,17 +93,16 @@ section{
 
 
 .main-header{
-    display: flex;
+    display: block;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    justify-content:space-between;
     margin: auto;
     padding: 5%;
 }
 
 .main-header-top-bar{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -111,21 +112,20 @@ section{
     width: 100%;
 }
 
-
-
 .logo{
-    margin-bottom: 5%;
+    width: 50%;
+    padding-right: 5%;
 }
 
 .search-bar{
     display: flex;
     height: 2.5em;
-    width: auto;
     justify-content:center;
     border-radius: 5px;
     background-color: white;
     margin: auto;
     align-items: center;
+    width: 50%;
 }
 
 .search-bar input{
@@ -147,6 +147,10 @@ section{
     color: rgba(0, 0, 0, 0.541);
 }
 
+.frase{
+    margin: auto;
+}
+
 /* ------- NAV ---------*/
 
 .nav-bar{
@@ -156,17 +160,17 @@ section{
 .nav-section {
     margin-bottom: 1em;
     padding: 0;
-  }
+}
   
 .nav-section li a {
     color: black;
     text-decoration: underline;
     margin-right: 3px;
-  }
+}
   
 .nav-section li {
     list-style: none;
-  }
+}
 
 /* ------- BURGUER ---------*/
 
@@ -187,27 +191,44 @@ section{
 
 /* ------- ARTICULOS ---------*/
 
+
+
 .article{
+    display: flex;
+    justify-content: flex-start;
     border-top: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
-.article p{
-    line-height: 10%;
+.precio{
+    flex-grow: 0.3;
+}
+
+.descuento{
+    flex-grow: 0.7;
 }
 
 .descripcion{
-    display: none;
+    width: 100%;
+    padding-top: 5px;
 }
 
 .fa-truck{
-    padding-top: 0.40em;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
     border: 1px solid #39b54a;
-    height:2em;
-    width: 2em;
+    height:30px;
+    width: 30px;
     border-radius: 50px;
-    text-align: center;
+    right: 20px;
+    top: -15px;
+    position: absolute;
 }
 
 /* ------ FOOTER ---------- */
