@@ -91,67 +91,71 @@ section{
 
 /* ------------------ SECCIONES ------------------ */ 
 
-
-.main-header{
-    display: block;
-    justify-content: flex-start;
+header{
+    display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    padding: 5%;
+    padding: 1%;
 }
+
+/* ------------------ TOP BAR ------------------ */ 
 
 .main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-}
-
-.main-header-bottom-bar ul{
-    display: flex;
-    justify-content:flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .logo{
-    width: 50%;
-    padding-right: 5%;
+    min-width: 20%;
+    max-width: 150px;
 }
 
 .search-bar{
     display: flex;
     height: 2.5em;
-    justify-content:center;
+    align-items:center;
+    justify-content: space-around;
     border-radius: 5px;
     background-color: white;
-    margin: auto;
+    margin: 3%;
     align-items: center;
-    width: 50%;
+    padding: 3%;
 }
 
 .search-bar input{
-    flex-grow:0.8;
     display: block;
     border: solid white 1px;
     background-color: none;
 }
 
 .button-search{
-    display: block;
     border: solid white 1px;
     border-left: solid rgba(0, 0, 0, 0.16) 1px;
     background-color: white;
 }
 
 .fa-magnifying-glass{
+    margin-left: 50%;
     display: block;
     color: rgba(0, 0, 0, 0.541);
 }
 
 .frase{
+    padding: 3%;
+    max-width: 350px;
+    text-align: right;
     margin: auto;
 }
 
-/* ------- NAV ---------*/
+/* ------------------ BOTTOM BAR ------------------ */ 
+
+.main-header-bottom-bar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .nav-bar{
     display: none;
@@ -164,7 +168,8 @@ section{
   
 .nav-section li a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
+    margin-left: 10px;
     margin-right: 3px;
 }
   
@@ -190,8 +195,6 @@ section{
 }
 
 /* ------- ARTICULOS ---------*/
-
-
 
 .article{
     display: flex;
