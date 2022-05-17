@@ -94,7 +94,7 @@ section{
 header{
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
+    padding: 2%;
 }
 
 /* ------------------ TOP BAR ------------------ */ 
