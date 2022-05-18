@@ -1,16 +1,16 @@
 /*TABLET*/
 
-@media(min-width: 768px){
+@media(min-width: 882px){
+
+    body{
+        font-size: 20px;
+    }
 
     .burger-menu{
         display: none;
     }
 
     .main-header-top-bar{
-        display: flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-        align-items: center;
         width: 100%;
     }
 
@@ -19,12 +19,19 @@
     }
 
     .search-bar{
-        max-width: 40%;
+        max-width: none;
+        flex-grow: 2;
+    }
+    
+    .frase{
+        max-width: 300px;
     }
 
-    .main-header-bottom-bar ul{
+    .main-header-bottom-bar{
+        font-size: 20px;
         display: flex;
-        justify-content:flex-start;
+        justify-content:  space-between;
+        align-items: center;
         width: 100%;
     }
 
