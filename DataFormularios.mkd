@@ -15,6 +15,15 @@ campos a rellenar: etiqueta **input**
 
 campo de MULTIPLES LINEAS **textarea**
 
+<form action="resultado.html" method="POST">
+    <label>Dejanos tu comentario</label>
+    <textarea placeholder="Dejanos tu opinion aca"></textarea>
+    <p>
+        <button type="submit" value="Enviar">Enviar</button>
+        <button type="reset" value="Borrar">Borrar</button>
+     </p>
+</form>
+
 campo con opciones **select** y dentro, la etiqueta **option** -- puede tener el selected para preseleccionar la opcion
 <select>
     <option selected value="argentina">Argentina</option>
@@ -34,3 +43,45 @@ o un input
     value - campos que no permiten insercion de texto por parte de usuarios
     required - generará que el campo sea obligatorio
     placeholder - muestra texto de ayuda
+
+****** **RADIO BUTTONS** ************
+Se generan desde la etiqueta INPUT type="radio" --- anidados dentro de la etiqueta label para que si clickean sobre el texto tambien se selecciona - SOLO UNA OPCION
+
+SIEMPRE CON VALUE PARA QUE EL FORMULARIO ENVIE LA INFO PARA PROCESAR
+
+**se puede poner adentro del input *checked* para que sea la opcion por default**
+
+<label>
+    <input type="radio" value="acepta">
+Acepto los terminos
+</label>
+
+para *mas opciones* tiene que tener el atributo name IGUAL en todas las opciones
+
+****** **CHECK BOX** ************
+
+SIEMPRE CON VALUE=""
+Etiqueta input type="checkbox"  // misma estructura que RADIO solo que con ella se puede elegir mas de una op
+
+--------------------------------------------- FORMULARIOS AVANZADOS --------------------------------------------------------
+
+**OPCIONES**
+<slect name="mes">
+    <option value=1>Enero</option>
+</slect>
+
+**CALENDARIO**
+<input type="date" name="fechaNacimiento">
+    para tener una fecha pre-seleccionada ---  value="1998-08-28" año-mes-dia
+OPCIONAL:
+    tener un atributo min="1996-06-15" o max="2020-12-24" para determinar minimo y máximo en las opciones a elegir
+
+**INPUT FILE**
+<input type="file" name="fotoPerfil">
+    abre el explorador / por defecto acepta solo 1 archivo y si no añadir el atributo "multiple"
+    - tipo de archivos que admite con el atributo accept=".jpg, .png"
+
+**VALIDACION DE DATOS EN HTML**
+con la etiqueta <span class="feedback"> después de cada uno de los campos - enviará la rta resultante después de la validacion de datos
+
+https://developer.mozilla.org/es/docs/Web/HTML/Element/input
