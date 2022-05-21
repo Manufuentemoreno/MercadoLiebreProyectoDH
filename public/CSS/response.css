@@ -25,23 +25,16 @@
     
     .frase{
         max-width: 300px;
+        text-align: right;
     }
 
     .main-header-bottom-bar{
         font-size: 20px;
-        display: flex;
-        justify-content:  space-between;
-        align-items: center;
-        width: 100%;
     }
 
     .nav-bar{
         display: flex;
         align-items: center;
-    }
-
-    .left-navbar{
-        align-self: flex-end;
     }
 
     /* ---ARTICLES--- */
@@ -59,6 +52,10 @@
     main section article{
         width: 40%;
         box-shadow: 8px 8px 22px -12px rgba(66,66,66,0.4);
+    }
+
+    footer article{
+        line-height: 24px;
     }
 } 
 

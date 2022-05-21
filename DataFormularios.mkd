@@ -1,10 +1,13 @@
 FORMULARIOS
 
 html ---- etiqueta **form**
-    tiene dos atributos:  action: ruta en dnd se procesa la info --- method: define como se obtiene la informacion
+    tiene dos atributos:  action: ruta en dnd se procesa la info --- method: define como se obtiene la informacion (GET - POST)
 
 etiqueta **label**
     txt que acompana cada campo del formulario
+
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre"> --- para que el input y label queden asociados, el ID tiene que ser igual al for para que al clickearlo te lleve automaticamente a la caja de input
 
 campos a rellenar: etiqueta **input**
     tiene el atributo 'type' y dependiendo el valor se generara un tipo distinto de campo
@@ -12,20 +15,22 @@ campos a rellenar: etiqueta **input**
 
 campo de MULTIPLES LINEAS **textarea**
 
-campo con opciones **select** y dentro, la etiqueta **option**
+campo con opciones **select** y dentro, la etiqueta **option** -- puede tener el selected para preseleccionar la opcion
 <select>
-    <option>Argentina</option>
-    <option>Brasil</option>
-    <option>Paraguay</option>
+    <option selected value="argentina">Argentina</option>
+    <option value="brasil">Brasil</option>
+    <option value="paraguay">Paraguay</option>
 </select>
 
 ENVIAR LA INFORMACION etiqueta **button**
     type= submit / reset
     el submit enviara el formulario a la ruta definida en el atributo action de la etiqueta form
 
+o un input
+<input value="ENVIAR" type="submit">
 
 ------ atributos generales:
-    name - permite darle a cada campo del formulario ser identificado como un elemento en particular 
+    name - permite darle a cada campo del formulario ser identificado como un elemento en particular **elementos sin name no se enviarán**
     value - campos que no permiten insercion de texto por parte de usuarios
     required - generará que el campo sea obligatorio
     placeholder - muestra texto de ayuda

@@ -148,7 +148,7 @@ header{
 .frase{
     padding: 10px;
     max-width: 350px;
-    text-align: right;
+    text-align: center;
 }
 
 /* ------------------ BOTTOM BAR ------------------ */ 
@@ -157,23 +157,42 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: auto;
 }
 
 .nav-bar{
     display: none;
+    padding-left: 0%;
+}
+
+.left-navbar{
+    display: flex;
+    align-self: flex-start;
+}
+
+.right-navbar{
+    align-self: flex-end;
 }
 
 .nav-section {
     display: flex;
     margin-bottom: 1em;
+    margin-top: 1em;
     padding: 0;
 }
   
 .nav-section li a {
     color: black;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 3px;
+    margin-right: 10px;
+}
+
+.left-navbar li a{
+    margin-right: 10px;
+}
+
+.right-navbar li a{
+    margin-left: 15px;
 }
   
 .nav-section li {
@@ -199,6 +218,14 @@ header{
 }
 
 /* ------- ARTICULOS ---------*/
+
+h2{
+    margin-top: 1em;
+}
+
+.articles{
+    margin-bottom: 1em;
+}
 
 .article{
     display: flex;
