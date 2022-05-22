@@ -1,0 +1,71 @@
+h2{
+    font-size: large;
+}
+
+main form{
+    margin:5%
+}
+
+
+form input{
+    width: 90%;
+    font-size: 14px;
+    padding: 8%;
+    margin: 5%;
+    border: none;
+    border-radius: 5px;
+    height: 1.5em;
+}
+
+form input:active{
+    border: none;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil label{
+    display: flex;
+    align-items: center;
+}
+
+.perfil label input{
+    width: auto;
+}
+
+.categorias-interes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-categoria{
+    margin: 20%;
+}
+
+form button{
+    width: 45%;
+    height: 20%;
+    margin: auto;
+    font-size: large;
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    background-color: #1259c3;
+    color: white;
+}
+
+.botones{
+    display: flex;
+}
+
+.boton-eliminar{
+    padding: 5% 2% 5% 2%;
+}
+
+form button:hover{
+    background-color: #03264C;
+}

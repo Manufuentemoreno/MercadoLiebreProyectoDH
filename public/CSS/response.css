@@ -1,9 +1,9 @@
 /*TABLET*/
 
-@media(min-width: 882px){
+@media(min-width: 481px){
 
     body{
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .burger-menu{
@@ -60,7 +60,7 @@
 } 
 
 /* DESKTOP */
-@media(min-width: 1200px){
+@media(min-width: 769px){
     main section article{
         width: 20%;
         box-shadow: none;
