@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/createForm.css">
     <link rel="stylesheet" href="/css/response.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
     
@@ -40,12 +40,12 @@
             <ul class="nav-section left-navbar">
                 <li><a href="#Ofertas">Ofertas</a></li>
                 <li><a href="#Tiendas">Tiendas Oficiales</a></li>
-                <li><a href="#Vender">Vender</a></li>
+                <li><a href="./vender">Vender</a></li>
                 <li><a href="#Ayuda">Ayuda</a></li>
             </ul>
             <ul class="nav-section right-navbar">    
                 <li><a href="/CreáTuCuenta">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
-                <li><a href="#Ingresá">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="./login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="#MásCompras">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -55,29 +55,51 @@
     </header>
     <main>
         <h2>Nuevo usuari@:</h2>
-    <form action="/login" method="get">
-        <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
-        <input type="text" name="user" id="user" placeholder="Nombre de usuari@">
-        <label for="birth">Fecha de Nacimiento:</label>
-        <input type="date" name="birth" id="birth">
-        <input type="text" name="direction" id="direction" placeholder="Domicilio">
-        <label for="profile">Perfil de usuario: </label>
-        <div class="perfil">
-                <label for="buyer"><input name="profile" value="buyer" type="radio" id="buyer">Comprador</label>
-                <label for="seller"><input name="profile" value="seller" type="radio" id="seller">Vendendor</label>
+    <form action="/login" method="get" class="form-product">
+        <div class="control-form">
+            <span class="error">*Nombre inválido</span>
+            <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="control-input">
         </div>
-        <label class="sub-categoria">Categorías de interés: </label>
-        <div class="categorias-interes">
-            <p><label for="interes"><input type="checkbox" name="interes" id="interes" value="Electro">Electro</label>
-            <p><label for="interes"><input type="checkbox" name="interes" id="interes" value="Moda">Moda</label>
-            <p><label for="interes"><input type="checkbox" name="interes" id="interes" value="Hogar">Hogar</label>
-            <p><label for="interes"><input type="checkbox" name="interes" id="interes" value="Juguetería">Juguetería</label>
-            <p><label for="interes"><input type="checkbox" name="interes" id="interes" value="Vida Sana">Vida Sana</label>
+        <div class="control-form">
+            <input type="text" name="user" id="user" placeholder="Nombre de usuari@" class="control-input">
         </div>
-        <label for="fotoPerfil"class="sub-categoria">Foto de Perfil: <input type="file" name="fotoPerfil" id="fotoPerfil" accept=".jpg, .png"></label>
-        <input type="password" name="password" id="password" placeholder="Contraseña">
-        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña">
-        <div class="botones"><button type="submit">Enviar</button><button type="reset" class="boton-eliminar">Eliminar Todo</button></div>
+        <div class="control-form">
+            <label for="birth">Fecha de Nacimiento:</label>
+            <input type="date" name="birth" id="birth" class="control-input">
+        </div>
+        <div class="control-form">
+            <input type="text" name="direction" id="direction" placeholder="Domicilio" class="control-input">
+        </div>
+        <div class="control-form">
+            <label for="profile">Perfil de usuario: </label>
+            <div class="selector">
+                    <label for="buyer"><input name="profile" value="buyer" type="radio" id="buyer">Comprador</label>
+                    <label for="seller"><input name="profile" value="seller" type="radio" id="seller">Vendendor</label>
+            </div>
+        </div>
+        <div class="control-form">
+            <label>Categorías de interés: </label>
+            <div class="selector">
+                <label for="electro"><input type="checkbox" name="interes" id="electro" value="Electro">Electro</label>
+                <label for="moda"><input type="checkbox" name="interes" id="moda" value="Moda">Moda</label>
+                <label for="hogar"><input type="checkbox" name="interes" id="hogar" value="Hogar">Hogar</label>
+                <label for="jugueteria"><input type="checkbox" name="interes" id="jugueteria" value="Juguetería">Juguetería</label>
+                <label for="vidasana"><input type="checkbox" name="interes" id="vidasana" value="Vida-Sana">Vida Sana</label>
+            </div>
+        </div>
+        <div class="control-form">
+            <label for="fotoPerfil"class="sub-categoria">Foto de Perfil: 
+                <input type="file" name="fotoPerfil" id="fotoPerfil" accept=".jpg, .png" class="control-input">
+            </label>
+        </div>
+        <div class="control-form">
+            <input type="password" name="password" id="password" placeholder="Contraseña" class="control-input">
+        </div>
+        <div class="control-form">
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña"  class="control-input">
+        </div>
+        <button type="submit">Registrate</button>
+        <button type="reset">Eliminar Todo</button>
     </form>
     </main>
     <footer>

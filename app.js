@@ -16,3 +16,11 @@ app.get("/",(req, res) => {
 app.get("/CreaTuCuenta",(req, res) => {
     res.sendFile(path.resolve(__dirname,"./views/register.html"))
 });
+
+app.get("/vender",(req, res) => {
+    res.sendFile(path.resolve(__dirname,"./views/newProduct.html"))
+});
+
+app.get("/login",(req, res) => {
+    res.sendFile(path.resolve(__dirname,"./views/login.html"))
+});
