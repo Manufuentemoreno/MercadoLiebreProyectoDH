@@ -95,6 +95,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     padding: 2%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 200;
 }
 
 /* ------------------ TOP BAR ------------------ */ 
@@ -102,9 +106,10 @@ header{
 .main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .logo{
@@ -148,7 +153,6 @@ header{
 .frase{
     padding: 10px;
     max-width: 350px;
-    text-align: center;
 }
 
 /* ------------------ BOTTOM BAR ------------------ */ 
@@ -158,6 +162,7 @@ header{
     justify-content: space-between;
     width: 100%;
     margin: auto;
+    font-size: 10px;
 }
 
 .nav-bar{
@@ -194,6 +199,7 @@ header{
 .right-navbar li a{
     margin-left: 15px;
 }
+
   
 .nav-section li {
     display: flex;
@@ -272,6 +278,8 @@ footer{
     width:100%;
     margin: auto;
     padding: 5%;
+    position: relative;
+    z-index: 100;
 }
 
 footer article{
