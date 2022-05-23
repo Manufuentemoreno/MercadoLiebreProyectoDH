@@ -1,10 +1,5 @@
 /*TABLET*/
-
 @media(min-width: 481px){
-
-    body{
-        font-size: 14px;
-    }
 
     .burger-menu{
         display: none;
@@ -26,10 +21,6 @@
     .frase{
         max-width: 300px;
         text-align: right;
-    }
-
-    .main-header-bottom-bar{
-        font-size: 20px;
     }
 
     .nav-bar{
@@ -61,6 +52,15 @@
 
 /* DESKTOP */
 @media(min-width: 769px){
+
+    body{
+        font-size: 18px;
+    }
+
+    .main-header-bottom-bar{
+        font-size: 20px;
+    }
+
     main section article{
         width: 20%;
         box-shadow: none;
@@ -69,4 +69,23 @@
     main section article:hover{
         box-shadow: 8px 8px 22px -12px rgba(66,66,66,0.4);
     }
+
+    .control-form{
+        font-size: 20px;
+    }  
+
+    main button{
+        width: auto;
+        font-size: 24px;
+        flex-grow: 1;
+        margin: 2% 0.5%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
 }
