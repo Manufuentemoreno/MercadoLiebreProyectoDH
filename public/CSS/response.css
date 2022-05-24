@@ -32,10 +32,6 @@
 
     /* ---ARTICLES--- */
 
-    .descripcion{
-        display: none;
-    }
-
     main section{
         display: flex;
         flex-wrap: wrap;
@@ -66,10 +62,25 @@
     main section article{
         width: 20%;
         box-shadow: none;
+        transition: all 450ms;
     }
 
     main section article:hover{
         box-shadow: 8px 8px 22px -12px rgba(66,66,66,0.4);
+        opacity: 1;
+    }
+    
+    .descripcion{
+        opacity: 0;
+        transition: all 450ms;
+    }
+    
+    .descripcion:hover{
+        opacity: 1;
+    }
+
+    .fa-truck:hover{
+        transform: rotate(-90deg);
     }
 
     .control-form{
@@ -92,5 +103,29 @@
     .frase{
         max-width: 210px;
     }
+
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer section article{
+        margin: 0;
+        font-size: 14px;
+        max-width: 30%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    footer i{
+        transition: all 450ms;
+    }
+
+    footer i:hover{
+        color: #0022AA;
+    }
+
+
 
 }
