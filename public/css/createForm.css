@@ -75,11 +75,11 @@ main button{
     margin: 2% 0%;
 }
 
-.login{
+.b-color{
     transition: all 450ms;
 }
 
-.login:hover{
+.b-color:hover{
     background-color: #0022AA;
 }
 

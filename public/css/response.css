@@ -40,7 +40,7 @@
 
     main section article{
         width: 40%;
-        box-shadow: 8px 8px 22px -12px rgba(66,66,66,0.4);
+        box-shadow: 5px 10px 8px -12px rgba(66,66,66,0.4);
     }
 
     footer article{
@@ -118,14 +118,17 @@
         text-align: center;
     }
 
-    footer i{
-        transition: all 450ms;
+    footer section article i{
+            transition: all 450ms;
     }
 
-    footer i:hover{
+    footer section article i:hover{
         color: #0022AA;
     }
 
-
+    .form-product{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
 }
