@@ -51,12 +51,16 @@
 /* DESKTOP */
 @media(min-width: 769px){
 
+    header{
+        padding-bottom: 0%;
+    }
+
     body{
         font-size: 18px;
     }
 
     .main-header-bottom-bar{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     main section article{
