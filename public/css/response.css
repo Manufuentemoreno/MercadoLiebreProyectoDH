@@ -75,7 +75,7 @@
         transition: all 450ms;
     }
     
-    .descripcion:hover{
+    main section article:hover .descripcion{
         opacity: 1;
     }
 
