@@ -22,7 +22,7 @@ main{
 
 main article{
     margin-bottom: 10px;
-    background-color: #ebebeb
+    background-color: #ebebeb;
 }
 
 nav {
@@ -114,8 +114,7 @@ header{
 }
 
 .logo{
-    min-width: 20%;
-    max-width: 150px;
+    width: 50%;
 }
 
 .search-bar{
